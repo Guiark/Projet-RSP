@@ -1,0 +1,45 @@
+body{
+    background : rgb(26, 26, 46);
+}
+h1{
+    color: white;
+    text-align: center;
+    margin-top: 100px;
+    vertical-align: 20%;
+    
+}
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+    position: sticky, absolute ;
+}
+
+p{
+    text-align: center;
+    padding-top:  0%;
+    size: 50px;
+}
+
+/*Visiter*/
+
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    display: flexbox;
+    border: 2px solid white;
+    border-radius: 5px;
+
+}
+a:visited{
+    color: #ffffff;
+}
+a:hover{
+    color:#338bd5
+}
+a:active{
+    color:#338bd5
+}
+
+
