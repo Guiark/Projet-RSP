@@ -1,10 +1,11 @@
-/*body{
+body{
    background:  linear-gradient(135deg, #1a1a2e, #000000);
-}*/
+}
 *{
     margin:0px;
     padding:0px;
     font-family: Avenir, sans-serif;
+    display: block;
 }
 
 
@@ -86,7 +87,7 @@ nav ul{
     list-style-type: none;
 }
 nav li{
-    float:left;
+    float:right;
     width: 15%;
     text-align: center;
 }
@@ -118,16 +119,26 @@ nav a{
 
 nav a:hover{
     color:#4fd1ff;
-    border-bottom: 5px solid rgb(189, 44, 44);
+
 }
 
 /*Logo sur la barre de navigation*/
 
 .logo{
+    max-width: 200px;
+    height: auto;
+    position: absolute;
+    top: 8px;
+    left: 150px;
+    font-size: 20px;
+}
+
+
+/*.logo{
     display: block;
     margin: auto;
     margin-top: -5%;
     width: 5%;
     height: 5%;
     position:sticky ;
-}
+}*/
