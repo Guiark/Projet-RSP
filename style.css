@@ -1,35 +1,48 @@
-body{
-    background : rgb(26, 26, 46);
-}
-h1{
-    color: white;
-    text-align: center;
-    margin-top: 100px;
-    vertical-align: 20%;
-    
-}
-img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 150px;
-    position: sticky, absolute ;
+body {
+    background: rgb(26, 26, 46);
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
 }
 
-p{
+h1 {
+    color: white;
     text-align: center;
-    padding-top:  0%;
-    size: 50px;
+    margin-bottom: 30px;
+    font-size: 28px;
 }
+
+button {
+    font-size: 20px;
+    padding: 10px 20px;
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: red;
+}
+
+.principal {
+    background-image: url('image/logo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 
 /*Visiter*/
 
 a{
     text-decoration: none;
     color: rgb(255, 255, 255);
-    display: flexbox;
-    border: 2px solid white;
-    border-radius: 5px;
+
+
 
 }
 a:visited{
