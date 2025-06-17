@@ -2,11 +2,77 @@
 <html lang="Fr-fr">
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="../style/pages.css">
-        <link rel="icon" type="image/png" href="../image/image.png">
+        <link rel="stylesheet" href="../style/contact.css">
+        <link rel="icon" type="image/png" href="../image/logo(1).png">
         <title>contact-nous</title>
     </head>
     <body>
-        <h1><u>Hello World</u></h1>
+
+<!----------------------------------------Partie Navigation----------------------------------------------------------------------------------------------------->
+        <div>
+            <nav class="teste">
+                <ul>
+                    <li><a href="Contact-nous.html">Contact-nous</a></li>
+                    <li><a href="#">Nos Partenaires</a></li>
+                    <li><a href="#"> Nous rejoindre</a></li>
+                    <li><a href="#">Nos Objectifs</a></li>
+                    <li><a href="#">Qui nous-sommes ? </a></li>
+                </ul>
+                <a href="rsp.html"><img src="../image/logo(1).png" alt="logo" class="logo"></a>
+            </nav>
+        </div>
+<!--------------------------------------Partie Haut de Page------------------------------------------------------------------------------------------------------>
+        <main>
+            <br><h1 class="contact"><u>Contact-nous</u></h1>
+            <br><br>
+        </main> 
+<!--------------------------------------Partie Forum------------------------------------------------------------------------------------------------------------->
+        <div class="forum">
+            <h1>Vous-voulez nous contacter ?</h1>
+            <p>N'hésiter pas à posez votre question</p>
+            <br>
+            <fieldset class="question">
+                <div>
+                    <label for="nom">Votre Nom :<input placeholder="Nom*" type="text" id="nom" required></label><br>
+                    <label for="prenom">Votre Prénom :<input placeholder="Prénom*" type="text" id="prenom" required></label><br>
+                    <label for="email">Votre Email :<input placeholder="Email*" type="email" id="email"required></label><br>
+                    <label for="telephone">Votre Numéros de  Téléphone : <input placeholder="Téléphone" type="tel" id="telephone"></label><br>
+                    <label for="question">Votre Question : <textarea placeholder="Votre question*" type="texte" id="question" rows="5" cols="50" required></textarea></label>
+                    <br><br>
+                    <label for="submit"><input type="submit" id="submit"></label>
+                </div>
+            </fieldset>
+        </div>
+<!--------------------------------------Partie Image Personnage-------------------------------------------------------------------------------------------------->        
+        <div class="image-contact">
+            <img src="../image/contact-transparent.png" alt="contact">
+        </div>
+        
+<!--------------------------------------Partie Réseau Sociaux---------------------------------------------------------------------------------------------------->
+        <p class="nos-reseau"><u>Nos Réseau</u></p><br><br>
+        
+        <div class="reseau">
+            <a href="https://www.instagram.com/rsp.officiel/"><img class="instagram" src="../image/insta.png" alt="instagram"></a>
+            <a href="https://www.tiktok.com/@rsp.esport"><img class="tiktok"  src="../image/tiktok.png" alt="tiktok"></a>
+            <a href="https://www.twitch.tv/rsp_eva"><img class="twitch" src="../image/twitch.png" alt="twitch"></a>
+            <img class="email" src="../image/gmail.png" alt="email" onclick="copierEmail()">
+            <div id="message"></div>
+        </div>
+
+<!--------------------------------------Partie Copier Adrres Mail------------------------------------------------------------------------------------------------>.
+    <script>
+        function copierEmail() {
+            const email = "exemple@email.com"; // 🔁 ton adresse ici
+            navigator.clipboard.writeText(email).then(() => {
+                document.getElementById("message").textContent = "Adresse copiée !";
+            }).catch(err => {
+                document.getElementById("message").textContent = "Erreur de copie";
+                console.error(err);
+            });
+        }
+    </script>
+<!--------------------------------------Partie Retour Page Principal--------------------------------------------------------------------------------------------->
+            
     </body>
+    
 </html>

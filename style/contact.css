@@ -1,0 +1,166 @@
+body{
+   background-color:  #1a1a2e;
+    margin:0px;
+    padding:0px;
+    font-family: Avenir, sans-serif;
+    color: white;
+}
+main{
+    text-align: center;
+    background-color: #0f0f1b;
+    top: 20px;
+    padding: 20px;
+}
+.contact{
+    position: sticky;
+   font-size: 50px;
+   margin: -12px;
+}
+
+
+
+/*Le Forum*/
+
+.forum{
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.116);
+    width: 50%;
+    height: 76%;
+    position: absolute;
+    right: 10%;
+}
+
+.question{
+    border: none;
+    padding: 2rem 0;
+    border-top: 3px solid #3b3b4f;
+}
+
+input, textarea{
+    display: block;
+    width: 50%;
+    margin: 0.5em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: #3b3b4f;
+    border-color: rgb(0, 0, 0);
+    min-width: 300px;
+    color: white;
+}
+input[type="submit"]{
+    cursor: pointer;
+}
+
+/* Image de l'home au téléphone*/
+
+.image-contact{
+    padding: 0;
+    width: 500px;
+}
+
+
+
+/* Les Réseaux*/
+
+
+.nos-reseau{
+    position: absolute;
+    left: 140px;
+    font-size: 30px;
+    margin: 10px;
+}
+
+.instagram{
+    position: absolute;
+    padding: 10px;
+    max-width: 50px;
+    max-height: auto;
+    cursor: pointer;
+    left: 300px;
+}
+.tiktok{
+    position: absolute;
+    padding: 10px;
+    max-width: 40px;
+    max-height: auto;
+    cursor: pointer;
+    left: 200px;
+
+}
+.twitch{
+    position: absolute;
+    padding: 10px;
+    max-width: 50px;
+    max-height: auto;
+    cursor: pointer;
+    left: 100px;
+}
+.email{
+    position: absolute;
+    padding: 10px;
+    max-width: 50px;
+    max-height: auto;
+    left: 200px;
+    bottom: -120px;
+    cursor: pointer;
+    width: 100px;
+}
+
+#message {
+    color: green;
+    margin-top: 10px;
+}
+
+
+/*La barre de navigation*/
+
+nav ul{
+    list-style-type: none;
+}
+nav li{
+    float:right;
+    width: 15%;
+    text-align: center;
+}
+
+nav ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav{
+    width: 100%;
+    margin: 0 auto;
+    background-color:#0f0f1b ;
+    position: sticky;
+    top: 50px;
+    padding: 0;
+    
+}
+
+nav a{
+    display: block;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border-bottom: 2px solid transparent;
+    padding: 50px ;
+
+    
+}
+
+nav a:hover{
+    color:#4fd1ff;
+
+}
+
+/*Logo sur la barre de navigation*/
+
+.logo{
+    max-width: 104px;
+    max-height: auto;
+    height: auto;
+    position: absolute;
+    top: -2px;
+    left: 200px;
+}
