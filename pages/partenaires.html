@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="Fr-fr">
+    <head>
+        <meta charset="UTF-8">
+        
+        <link rel="stylesheet" href="../style/rsp.css">
+        <link rel="icon" type="image/png" href="../image/image.png">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>RSP Official</title>
+    </head>
+    <body>
+<!--------------------------------------------------------------------------Partie Navigation----------------------------------------------------------------------------------------------------->        
+            <div>
+            <nav aria-label="Menu Principal" class="navbar">     
+            <img data-aos="flip-right" data-aos-duration="1500" src="../image/nomlogo.png" alt="nomlogo" class="logopti">
+            <img data-aos="fade-down-right" data-aos-duration="1500" data-aos-easing="linear" class="logopti" src="../image/objectifpape.png" alt="Logo"></a>
+            <div class="burger" id="burger">&#9776;</div>
+
+            <ul data-aos="fade-down" data-aos-duration="1500" class="nav-links" id="nav-links">
+                <li><a href="rsp.html">Qui nous-sommes ?</a></li>
+                <li><a href="objectifs.html">Nos Objectifs</a></li>
+                <li><a href="rejoinde.html">Nous rejoindre</a></li>
+                <li><a href="partenaires.html">Nos Partenaires</a></li>
+                <li><a href="Contact-nous.html">Contact-nous</a></li>
+            </ul>
+        </nav>
+        </div>
+
+
+
+
+
+
+
+<!--------------------------------------------------------------------------Bas de page----------------------------------------------------------------------------------------------------->
+        <footer>
+            <div class="menale">
+                <img class="logobas" src="../image/logo.png">
+                <p class="lepage">&copy; 2025-RSP-Tous droits résevés</p>
+                <a  class="lepage" href="/pages/mentions-légale.html"><p>Mention Légale</p></a>
+            </div>
+        </footer>
+<!------------------------------------Partie JavaScript--------------------------------------------------------------------------------------------->
+            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+            <script>
+                AOS.init({
+                    once: true 
+                    });
+                    const burger = document.getElementById("burger");
+                    const navLinks = document.getElementById("nav-links");
+
+                    burger.addEventListener("click", () => {
+                        navLinks.classList.toggle("active");
+                    
+                        if(navLinks.classList.contains('active')){
+                            burger.innerHTML="&times;";
+                        }else{
+                            burger.innerHTML="&#9776;";
+                        }
+                    });
+
+                 document.querySelectorAll('a').forEach(link=>{
+                    link.addEventListener('click',()=>{
+                    navLinks.classList.remove('active');
+                    burger.innerHTML='&#9776;';
+                    });
+                });
+            </script> 

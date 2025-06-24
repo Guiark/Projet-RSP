@@ -76,68 +76,9 @@ section{
 .textopti{
     color: white;
 }
+/********************************************************************** RMain ********************************************************/
 
-/****************************************Partie Présentation****************************************************************************************************/
-main{
-color: white;
-text-align: center;
-}
-
-/****************************************Partie Nos Réseaux***************************************************************************************************/
-
-
-
-.reseau{
-    text-align: center;
-    margin-top: 20%;
-    flex-direction: row;
-    color: white;
-    margin-bottom: 6%;
-}
-.instagram{
-    width: 10%;
-    padding-left: 0px;
-}
-.tiktok{
-    width: 10%;
-    padding-left: 40px;
-}
-.twitch{
-    width: 10%;
-    padding-left: 40px;
-}
-.email{
-    width: 14%;
-    padding-left: 40px;
-}
-
-/***********************************Bas de page*********************************************************************/
-.logobas{
-  width: 12%;
-  height: 40%;
-  margin: auto 0;
-
-}
-
-.menale{
-    margin: 56% 0 0;/* à changer si vous rajouter des choses dans le html partie à vous d'àjouter*/
-  background-color: #0f0f1b;
-  border: 0;
+img{
   display: flex;
-  justify-content:space-evenly; 
-  color: white;
-  padding:  0 20px;
-  text-align: center;
-}
-.lepage {
-  color: white;
-  text-decoration: none;
-  margin: auto 0;
   
-}
-.lepage:hover{
-  color: #777777 ;
-}
-.lepage::after{
-  color: #777777;
 }

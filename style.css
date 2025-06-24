@@ -13,14 +13,16 @@ h1 {
 }
 
 button {
-    font-size: 20px;
-    padding: 10px 20px;
+    display: flex;
+    padding: 10px 0;
     border: 2px solid white;
     background: transparent;
     color: white;
     border-radius: 8px;
     cursor: pointer;
-    
+    justify-content: center;
+    margin-top: auto;
+    max-width: 50%;
 }
 
 .principal {
@@ -35,24 +37,16 @@ button {
     align-items: center;
 }
 
-
-/*Visiter*/
+img{
+    display: flex;
+    width: 50%;
+    height: 10%;
+    
+}
 
 a{
-    text-decoration: none;
-    color: rgb(255, 255, 255);
+    max-width: 20%;
+}
 
-
-
-}
-a:visited{
-    color: #ffffff;
-}
-a:hover{
-    color:#338bd5
-}
-a:active{
-    color:#338bd5
-}
 
 

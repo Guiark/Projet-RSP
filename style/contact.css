@@ -75,9 +75,7 @@ section{
     position: static;
     max-width:10%;
 }
-.textopti{
-    color: white;
-}
+
 
 /****************************************************************Page Contact********************************************************************/
 
@@ -119,6 +117,7 @@ textarea{
 .logobas{
   width: 12%;
   height: 40%;
+  margin: auto 0;
 }
 
 .menale{
@@ -127,7 +126,7 @@ textarea{
   display: flex;
   justify-content:space-evenly; 
   color: white;
-  padding:  0 65px;
+  padding:  0 20px;
   text-align: center;
 }
 .lepage {
