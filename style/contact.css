@@ -5,7 +5,10 @@ body{
    font-family: Avenir, sans-serif;
 
 }
+body, html{
+  overflow-x: hidden;
 
+}
 /****************************************************************Barre de Navigation********************************************************************/
 
 .navbar {
@@ -112,7 +115,13 @@ textarea{
 }
 
 
-/********************************************************************************************************/
+/***********************************Bas de page*********************************************************************/
+.logobas{
+  display: flex;
+  width: 12%;
+  height: 40%;
+  margin: auto;
+}
 
 .menale{
   background-color: #0f0f1b;
@@ -120,7 +129,7 @@ textarea{
   display: flex;
   justify-content:space-evenly; 
   color: white;
-  padding: 5vh 0 65px;
+  padding:  0 65px;
   text-align: center;
 }
 .lepage {

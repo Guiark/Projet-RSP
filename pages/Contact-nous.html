@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" href="../style/contact.css">
         <link rel="icon" type="image/png" href="/image/logo.png">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>contact-nous</title>
     </head>
@@ -12,11 +13,11 @@
 
 <!--------------------------------------------------------------------------Partie Navigation----------------------------------------------------------------------------------------------------->
         <nav aria-label="Menu Principal" class="navbar">     
-            <img class="logopti" src="../image/contact-transparent.png" alt="Logo"></a>
-            <p class="textopti">RSP</p>
+            <img data-aos="flip-right" data-aos-duration="1500" src="../image/nomlogo.png" alt="nomlogo" class="logopti">
+            <img data-aos="fade-down-right" data-aos-duration="1500" data-aos-easing="linear" class="logopti" src="../image/contact-transparent.png" alt="Logo"></a>
             <div class="burger" id="burger">&#9776;</div>
 
-            <ul class="nav-links" id="nav-links">
+            <ul data-aos="fade-down" data-aos-duration="1500" class="nav-links" id="nav-links">
                 <li><a href="#">Qui nous-sommes ?</a></li>
                 <li><a href="#">Nos Objectifs</a></li>
                 <li><a href="#">Nous rejoindre</a></li>
@@ -26,30 +27,29 @@
         </nav>
 <!--------------------------------------------------------------------------Début----------------------------------------------------------------------------------------------------->
         <main>
-            <p class="contp">Contact-nous</p>
+            <p data-aos="zoom-out" data-aos-duration="1500" class="contp">Contact-nous</p>
         </main>
 
 <!--------------------------------------------------------------------------Formulaire----------------------------------------------------------------------------------------------------->
 
         <div class="formu">
             <div class="formulaire">
-                <label for="nom">Votre Nom :<br><input placeholder="Nom*" type="text" id="nom" required></label><br><br>
-                <label for="prenom">Votre Prénom :<br><input placeholder="Prénom*" type="text" id="prenom" required></label><br><br>
-                <label for="email">Votre Email :<br><input placeholder="Email*" type="email" id="email"required></label><br><br>
-                <label for="telephone">Votre Numéros de  Téléphone : <br><input placeholder="Téléphone" type="tel" id="telephone"></label><br><br>
-                <label for="question">Votre Question : <br><textarea placeholder="Votre question*" type="texte" id="question" rows="5" cols="30" required></textarea></label>
+                <label  for="nom"><div data-aos="fade-right" data-aos-duration="1500">Votre Nom :</div><br><input data-aos="fade-left" data-aos-duration="1500" data-aos-easing="ease-in-back" placeholder="Nom*" type="text" id="nom" required></label><br><br>
+                <label for="prenom"><div data-aos="fade-right" data-aos-duration="1500">Votre Prénom :</div><br><input data-aos="fade-left" data-aos-duration="1500" data-aos-easing="ease-in-back" placeholder="Prénom*" type="text" id="prenom" required></label><br><br>
+                <label for="email"><div data-aos="fade-right" data-aos-duration="1500">Votre Email :</div><br><input data-aos="fade-left" data-aos-duration="1500" data-aos-easing="ease-in-back" placeholder="Email*" type="email" id="email"required></label><br><br>
+                <label for="telephone"><div data-aos="fade-right" data-aos-duration="1500">Votre Numéros de  Téléphone : </div><br><input data-aos="fade-left" data-aos-easing="ease-in-back" data-aos-duration="1500" placeholder="Téléphone" type="tel" id="telephone"></label><br><br>
+                <label for="question"><div data-aos="fade-right" data-aos-duration="1500">Votre Question : </div><br><textarea data-aos="fade-left" data-aos-easing="ease-in-back" data-aos-duration="1500" placeholder="Votre question*" type="texte" id="question" rows="5" cols="30" required></textarea></label>
                 <br><br>
-                <label for="submit"><input type="submit" id="submit"></label>
+                <label for="submit"><input data-aos="fade-right" data-aos-duration="1500"  type="submit" id="submit"></label>
             </div>
         </div>
 
-<!--------------------------------------------------------------------------Nos réseaux----------------------------------------------------------------------------------------------------->
+<!--------------------------------------------------------------------------Bas de page----------------------------------------------------------------------------------------------------->
 
 
         <footer>
-            <div class="separation"></div>
             <div class="menale">
-                <img class="logopti" src="../image/logo.png">
+                <img class="logobas" src="../image/logo.png">
                 <p class="lepage">&copy; 2025-RSP-Tous droits résevés</p>
                 <a  class="lepage" href="/pages/mentions-légale.html"><p>Mention Légale</p></a>
             </div>
