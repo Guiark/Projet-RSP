@@ -5,7 +5,9 @@ body{
    font-family: Avenir, sans-serif;
 
 }
-
+body, html{
+  overflow-x: hidden;
+}
 
 /****************************************************************Barre de Navigation********************************************************************/
 
@@ -75,4 +77,62 @@ section{
 }
 .textopti{
     color: white;
+}
+/***********************************************************************main*****************************************************************************************/
+main{
+  text-align: center;
+  color: white;
+}
+
+/******************************************Partenaire******************************************************/
+
+.partenaria{
+  text-align: center;
+  color: white;
+}
+
+.eva{
+  width: 20%;
+}
+.nike{
+  width: 20%;
+}
+.revolut{
+  width: 20%;
+}
+.uaef{
+  width: 20%;
+}
+
+
+
+
+
+/***********************************Bas de page*********************************************************************/
+.logobas{
+  width: 12%;
+  height: 40%;
+  margin: auto 0;
+}
+
+.menale{
+  background-color: #0f0f1b;
+  border: 0;
+  display: flex;
+  justify-content:space-evenly; 
+  color: white;
+  padding:  0 20px;
+  text-align: center;
+}
+.lepage {
+  color: white;
+  text-decoration: none;
+  margin: auto 0;
+  
+}
+.lepage:hover{
+  color: #777777 ;
+}
+.lepage::after{
+  color: #777777;
 }

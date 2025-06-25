@@ -5,7 +5,9 @@ body{
    font-family: Avenir, sans-serif;
 
 }
-
+body, html{
+  overflow-x: hidden;
+}
 
 /****************************************************************Barre de Navigation********************************************************************/
 
@@ -78,7 +80,128 @@ section{
 }
 /********************************************************************** RMain ********************************************************/
 
-img{
+.join{
+  margin: 3px;
+}
+.grp5{
+  position: relative;
+  max-width: 30%;
+}
+main{
+  text-align: center;
+  color: white;
+}
+
+.recru{
+  text-align: center;
+  color: white;
+
+  list-style-position:inside;
+}
+li{
+  padding: 0 0 20px ;
+  line-height: 1.5;
+}
+ul{
+  padding: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***********************************Bas de page*********************************************************************/
+.logobas{
+  width: 12%;
+  height: 40%;
+  margin: auto 0;
+}
+
+.menale{
+  background-color: #0f0f1b;
+  border: 0;
   display: flex;
+  justify-content:space-evenly; 
+  color: white;
+  padding:  0 20px;
+  text-align: center;
+}
+.lepage {
+  color: white;
+  text-decoration: none;
+  margin: auto 0;
   
+}
+.lepage:hover{
+  color: #777777 ;
+}
+.lepage::after{
+  color: #777777;
 }

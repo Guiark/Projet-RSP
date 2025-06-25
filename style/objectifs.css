@@ -5,7 +5,9 @@ body{
    font-family: Avenir, sans-serif;
 
 }
-
+body, html{
+  overflow-x: hidden;
+}
 
 /****************************************************************Barre de Navigation********************************************************************/
 
@@ -77,16 +79,36 @@ section{
     color: white;
 }
 /***********************************************************Partie main******************************************************************************************************/
-
-.objectif{
-    
-   width: 25vh;
+main{
+  color: white;
+  text-align: center;
 }
 
+/***********************************************************Partie Compétition*******************************************************************************************************/
+.objectif{
+   width: 30%;
+}
+.competition{
+  text-align: center;
+  color: white;
+}
+.competition{
+  margin: 10px;  
+}
+.caen{
+  width: 20%;
+}
+.rennes{
+ width: 20%;
+}
+.france{
+  width: 20%;
+}
 
-
-
-
+.maiprise{
+  width: 20%;
+  max-height: auto;
+}
 
 
 
