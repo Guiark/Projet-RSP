@@ -14,13 +14,14 @@
     
         <div>
             <nav aria-label="Menu Principal" class="navbar">     
-            <img data-aos="flip-right" data-aos-duration="1500" src="../image/nomlogo.png" alt="nomlogo" class="logopti">
+            <img src="../image/nomlogo.png" alt="nomlogo" class="logopti">
             <img data-aos="fade-down-right" data-aos-duration="1500" data-aos-easing="linear" class="logopti" src="../image/reflechit.png" alt="Logo"></a>
             <div class="burger" id="burger">&#9776;</div>
 
-            <ul data-aos="fade-down" data-aos-duration="1500" class="nav-links" id="nav-links">
+            <ul class="nav-links" id="nav-links">
                 <li><a href="rsp.html">Qui nous-sommes ?</a></li>
                 <li><a href="objectifs.html">Nos Objectifs</a></li>
+                <li><a href="equipe.html">Notre Equipe</a></li>
                 <li><a href="rejoinde.html">Nous rejoindre</a></li>
                 <li><a href="partenaires.html">Nos Partenaires</a></li>
                 <li><a href="Contact-nous.html">Contact-nous</a></li>
@@ -29,8 +30,8 @@
         </div>
 <!--------------------------------------------------------------------------Partie Présentation----------------------------------------------------------------------------------------------------->
         <main>
-            <h1 data-aos="flip-up" data-aos-duration="1500">Qui nous-sommes ?</h1>
-            <p data-aos="fade-down-right" data-aos-duration="1500">RSP est une nouvelle equipe débutante Française qui veux performer sur la scène EVA (Esport Virtual Arena).Tu veux nous rejoindre pour la conquête de ce nouveau monde</p>
+            <h1>Qui nous-sommes ?</h1>
+            <p>RSP est une nouvelle equipe débutante Française qui veux performer sur la scène EVA (Esport Virtual Arena).Tu veux nous rejoindre pour la conquête de ce nouveau monde</p>
         </main>
 
 
@@ -55,11 +56,11 @@
 
         
         <div class="reseau">
-            <h3 data-aos="zoom-in-down" data-aos-duration="1500">Vous pouvez nous rejoindre sur nos réseau :</h3>
-            <a href="https://www.instagram.com/rsp.officiel/"><img data-aos="fade-right" data-aos-duration="1500" class="instagram" src="../image/insta.png" alt="instagram"></a>
-            <a href="https://www.tiktok.com/@rsp.esport"><img data-aos="fade-up" data-aos-duration="1500" class="tiktok"  src="../image/tiktok.png" alt="tiktok"></a>
-            <a href="https://www.twitch.tv/rsp_eva"><img data-aos="fade-down" data-aos-duration="1500"class="twitch" src="../image/twitch.png" alt="twitch"></a>
-            <img data-aos="fade-left" data-aos-duration="1500" class="email" src="../image/gmail.png" alt="email" onclick="copierEmail()">
+            <h3>Vous pouvez nous rejoindre sur nos réseau :</h3>
+            <a href="https://www.instagram.com/rsp.officiel/"><img  class="instagram" src="../image/insta.png" alt="instagram"></a>
+            <a href="https://www.tiktok.com/@rsp.esport"><img  class="tiktok"  src="../image/tiktok.png" alt="tiktok"></a>
+            <a href="https://www.twitch.tv/rsp_eva"><img class="twitch" src="../image/twitch.png" alt="twitch"></a>
+            <a href="mailto:officiel.rsp@gmail.com"><img  class="email" src="../image/gmail.png" alt="email"></a>
             <div id="message"></div>
         </div>
 <!--------------------------------------------------------------------------Bas de page----------------------------------------------------------------------------------------------------->
@@ -71,17 +72,6 @@
             </div>
         </footer>
 <!------------------------------------Partie JavaScript--------------------------------------------------------------------------------------------->
-        <script>
-            function copierEmail() {
-                const email = "officiel.rsp@gmail.com"; 
-                navigator.clipboard.writeText(email).then(() => {
-                    document.getElementById("message").textContent = "Adresse copiée !";
-                }).catch(err => {
-                    document.getElementById("message").textContent = "Erreur de copie";
-                    console.error(err);
-                });
-            }
-        </script>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
             <script>
             AOS.init({

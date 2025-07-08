@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="Fr-fr">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../style/equipe.css">
+        <link rel="icon" type="image/png" href="/image/logo.png">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>contact-nous</title>
+    </head>
+    <body>
+<!--------------------------------------------------------------------------Partie Navigation----------------------------------------------------------------------------------------------------->
+        <div>
+            <nav aria-label="Menu Principal" class="navbar">     
+                <img src="../image/nomlogo.png" alt="nomlogo" class="logopti">
+                <img data-aos="fade-down-right" data-aos-duration="1500" data-aos-easing="linear" class="logopti" src="../image/equipe.png" alt="Logo"></a>
+                <div class="burger" id="burger">&#9776;</div>
+
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="rsp.html">Qui nous-sommes ?</a></li>
+                    <li><a href="objectifs.html">Nos Objectifs</a></li>
+                    <li><a href="equipe.html">Notre Equipe</a></li>
+                    <li><a href="rejoinde.html">Nous rejoindre</a></li>
+                    <li><a href="partenaires.html">Nos Partenaires</a></li>
+                    <li><a href="Contact-nous.html">Contact-nous</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+       
+   
+   
+        <div class="carousel">
+            <button onclick="prevMember()">⬅️</button>
+                <div class="member-display">
+                <h2 id="memberName">Dylan</h2>
+                <img id="memberImage" src="../image/Equipe/persopoche.png" alt="Dylan" />
+                <p id="memberDescription">Dylan incarne le leadership EVA : focus total, aucune panique. Il coordonne, anticipe et reste maître de chaque situation.</p>
+            </div>
+            <button onclick="nextMember()">➡️</button>
+            </div>
+
+         <div id="skillsContainer" class="skills-container">
+         <!-- Compétences -->
+        </div>
+   
+   
+   
+   
+   
+   
+   
+   
+<!--------------------------------------------------------------------------Bas de page----------------------------------------------------------------------------------------------------->
+        <footer>
+            <div class="menale">
+                <img class="logobas" src="../image/logo.png">
+                <p class="lepage">&copy; 2025-RSP-Tous droits résevés</p>
+                <a  class="lepage" href="/pages/mentions-légale.html"><p>Mention Légale</p></a>
+            </div>
+        </footer>
+<!--------------------------------------------------------------------------script----------------------------------------------------------------------------------------------------->   
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+            <script>
+                AOS.init({
+                    once: true 
+                    });
+                    const burger = document.getElementById("burger");
+                    const navLinks = document.getElementById("nav-links");
+
+                    burger.addEventListener("click", () => {
+                        navLinks.classList.toggle("active");
+                    
+                        if(navLinks.classList.contains('active')){
+                            burger.innerHTML="&times;";
+                        }else{
+                            burger.innerHTML="&#9776;";
+                        }
+                    });
+
+                 document.querySelectorAll('a').forEach(link=>{
+                    link.addEventListener('click',()=>{
+                    navLinks.classList.remove('active');
+                    burger.innerHTML='&#9776;';
+                    });
+                });
+            </script> 
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+  const members = [
+    {
+      name: "Dylan",
+      
+      image: "../image/Equipe/persopoche.png",
+      description: "Dylan incarne le leadership EVA : focus total, aucune panique. Il coordonne, anticipe et reste maître de chaque situation. ",
+      skills: {
+        Force: 100,
+        Vitesse: 100,
+        Stratégie: 100
+      }
+    },
+    {
+      name: "Aurelien",
+      image: "../image/Equipe/persostar.png",
+      description:"teste",
+      skills: {
+        Force: 50,
+        Vitesse: 90,
+        Stratégie: 85
+      }
+    },
+    {
+      name: "Guiark",
+      image: "../image/Equipe/persurbain.png",
+      description: "Guiark est un joueurs assez timide mais ces trouvées sa places sur le terrains  ",
+      skills: {
+        Force: 55,
+        Vitesse: 20,
+        Stratégie: 50
+      }
+    },
+    {
+      name: "Petite Pika",
+      image: "../image/Equipe/persport.png",
+      description: "Petite Pika est un joueurs qui à fait du HandBall est cella lui à permis d'avoir une force de physique  ",
+      skills: {
+        Force: 95,
+        Vitesse: 80,
+        Stratégie: 40
+      }
+    }
+  ];
+
+  let currentIndex = 0;
+
+  function updateMember() {
+    const member = members[currentIndex];
+    document.getElementById("memberName").textContent = member.name;
+    document.getElementById("memberImage").src = member.image;
+    document.getElementById("memberDescription").textContent = member.description;
+
+    const container = document.getElementById("skillsContainer");
+    container.innerHTML = "";
+
+    for (const [name, value] of Object.entries(member.skills)) {
+      const skillDiv = document.createElement("div");
+      skillDiv.classList.add("skill");
+      skillDiv.innerHTML = `
+        <div class="skill-name">${name}</div>
+        <div class="skill-bar">
+          <div class="skill-bar-fill" style="width: ${value}%;"></div>
+        </div>
+      `;
+      container.appendChild(skillDiv);
+    }
+  }
+
+  function prevMember() {
+    currentIndex = (currentIndex - 1 + members.length) % members.length;
+    updateMember();
+  }
+
+  function nextMember() {
+    currentIndex = (currentIndex + 1) % members.length;
+    updateMember();
+  }
+
+  // Initial load
+  updateMember();
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+    </body>

@@ -8,7 +8,6 @@ body{
 body, html{
   overflow-x: hidden;
 }
-
 /****************************************************************Barre de Navigation********************************************************************/
 
 .navbar {
@@ -46,7 +45,6 @@ body, html{
 section{
   scroll-margin-top: 80px;
 }
-
 /********************************************************************** Responsive Burger ********************************************************/
 @media (max-width: 768px) {
   .nav-links {
@@ -75,94 +73,6 @@ section{
     position: static;
     max-width:10%;
 }
-.textopti{
-    color: white;
-}
-/********************************************************************** RMain ********************************************************/
-
-.join{
-  margin: 3px;
-}
-.grp5{
-  position: relative;
-  max-width: 30%;
-}
-main{
-  text-align: center;
-  color: white;
-}
-
-.recru{
-  text-align: center;
-  color: white;
-
-  list-style-position:inside;
-}
-li{
-  padding: 0 0 20px ;
-  line-height: 1.5;
-}
-ul{
-  padding: 0;
-}
-
-
-a{
-  color: white;
-}
-.recru a:hover{
-  color: rgb(228, 59, 59);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -209,4 +119,59 @@ a{
 }
 .lepage::after{
   color: #777777;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  color: white;
+  margin: 30px auto;
+  text-align: center;
+}
+
+.member-display img {
+  width: 150px;
+  height: auto;
+  border-radius: 12px;
+}
+
+.skills-container {
+  max-width: 400px;
+  margin: 30px auto;
+}
+
+.skill {
+  margin: 10px 0;
+}
+
+.skill-name {
+  color: white;
+  font-weight: bold;
+}
+
+.skill-bar {
+  background-color: #333;
+  height: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.skill-bar-fill {
+  height: 100%;
+  background: linear-gradient(to right, rgb(0, 0, 128), #ff0000);
+  width: 0;
+  transition: width 0.5s ease-in-out;
 }
